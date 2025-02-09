@@ -35,6 +35,9 @@
         "prettier:check": "prettier --check \"src/**/*.ts\" \"__tests__/**/*.ts\"",
         "prettier:write": "prettier --write \"src/**/*.ts\" \"__tests__/**/*.ts\""
     },
+    "workspaces": [
+        "packages/*"
+    ],
     "lint-staged": {
         "*.{ts,tsx,js,jsx}": [
             "prettier --write"
